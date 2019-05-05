@@ -1,8 +1,10 @@
-# Home Server
+Home Server
+-----------
 
 Home server configs and instructions.
 
-# Steps to install server:
+Steps to install server
+-----------------------
 
 Copy files needed on the server:
 
