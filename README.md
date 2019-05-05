@@ -1,11 +1,8 @@
-# home-server
-Home server configs
+# Home Server
 
-# Ssh access
+Home server configs and instructions.
 
-[explain ssh config]
-
-# Files and configs
+# Steps to install server:
 
 Copy files needed on the server:
 
