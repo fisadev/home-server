@@ -21,4 +21,4 @@
 # 
 # m h  dom mon dow   command
 */5 * * * * /home/sofisa/update_cyrene_fisadev_com >> /home/sofisa/update_cyrene_fisadev_com.log 2>&1
-30 * * * * /home/chip/backup_fisadev_gmail >> /home/chip/backup_fisadev_gmail.log 2>&1
+30 * * * * /home/sofisa/backup_fisadev_gmail >> /home/sofisa/backup_fisadev_gmail.log 2>&1
