@@ -10,11 +10,11 @@ Copy files needed on the server:
 
 .. code-block::
 
-    scp /home/fisa/devel/mios/scripts/update_cyrene_fisadev_com cyrene:/home/sofisa/update_cyrene_fisadev_com
-    scp /home/fisa/devel/mios/scripts/backup_fisadev_gmail cyrene:/home/sofisa/backup_fisadev_gmail
-    scp /home/fisa/devel/mios/dotfiles/mbsyncrc_fisadev_gmail cyrene:/home/sofisa/mbsyncrc_fisadev_gmail
-    scp /home/fisa/devel/mios/sites_nginx/home_server_static cyrene:/home/sofisa/home_server_static
-    scp /home/fisa/devel/home-server/crontab cyrene:/home/sofisa/crontab
+    scp /home/fisa/devel/mios/scripts/update_cyrene_fisadev_com cyrene.local:/home/sofisa/update_cyrene_fisadev_com
+    scp /home/fisa/devel/mios/scripts/backup_fisadev_gmail cyrene.local:/home/sofisa/backup_fisadev_gmail
+    scp /home/fisa/devel/mios/dotfiles/mbsyncrc_fisadev_gmail cyrene.local:/home/sofisa/mbsyncrc_fisadev_gmail
+    scp /home/fisa/devel/mios/sites_nginx/home_server_static cyrene.local:/home/sofisa/home_server_static
+    scp /home/fisa/devel/home-server/crontab cyrene.local:/home/sofisa/crontab
 
 
 Update index and install packages:
