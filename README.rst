@@ -51,35 +51,22 @@ Create and activate the static files site:
 
 Reboot with the disk connected.
 
-Optional: Ispy installation 
----------------------------
+Install motioneye
+-----------------
 
-(more info: https://www.ispyconnect.com/download.aspx)
-
-Locally:
+(more info: https://github.com/ccrisan/motioneye/wiki/Installation)
 
 .. code-block::
-    scp /home/fisa/devel/home-server/ispy_agent.conf cyrene.local:/home/sofisa/ispy_agent.conf
 
-
-On Cyrene:
-
-.. code-block::
-    sudo mv /home/sofisa/ispy_agent.conf /etc/supervisor/conf.d/
-
-    wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-    wget https://ispyfiles.azureedge.net/downloads/Agent_Linux64_2_8_3_0.zip
-
-    sudo dpkg -i packages-microsoft-prod.deb
-    sudo add-apt-repository -y ppa:jonathonf/ffmpeg-4
-
-    sudo apt install -y apt-transport-https
-    sudo apt install -y dotnet-sdk-3.1 ffmpeg libtbb-dev libc6-dev unzip supervisor
-
-    mkdir /home/sofisa/ispy_agent
-    unzip Agent_Linux64_2_8_3_0.zip -d /home/sofisa/ispy_agent
-
-    sudo service supervisor restart
+    sudo apt install motion ffmpeg v4l-utils python-pip python-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev
+    sudo pip install motioneye
+    sudo mkdir -p /etc/motioneye
+    sudo cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
+    sudo mkdir -p /var/lib/motioneye
+    sudo cp /usr/local/share/motioneye/extra/motioneye.systemd-unit-local /etc/systemd/system/motioneye.service
+    sudo systemctl daemon-reload
+    sudo systemctl enable motioneye
+    sudo systemctl start motioneye
 
 
 And load the config backup.
