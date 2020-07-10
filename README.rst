@@ -51,7 +51,10 @@ Create and activate the static files site:
 
 Reboot with the disk connected.
 
-Ispy installation (more info: https://www.ispyconnect.com/download.aspx)
+Optional: Ispy installation 
+---------------------------
+
+(more info: https://www.ispyconnect.com/download.aspx)
 
 Locally:
 
