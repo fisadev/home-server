@@ -58,7 +58,9 @@ Install motioneye
 
 .. code-block::
 
-    sudo apt install motion ffmpeg v4l-utils python-pip python-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev
+    sudo apt install motion ffmpeg v4l-utils python2 python2-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev build-essential
+    curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
+    sudo python2 get-pip.py
     sudo pip install motioneye
     sudo mkdir -p /etc/motioneye
     sudo cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
