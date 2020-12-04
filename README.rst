@@ -49,6 +49,14 @@ Create and activate the static files site:
     sudo ln -s /home/sofisa/home_server_static /etc/nginx/sites-enabled/home_server_static
 
 
+Configure laptop lid to be able to close it without the server shutting down.
+
+    sudo vi /etc/systemd/logind.conf
+        and set:
+        HandleLidSwitch=ignore
+        LidSwitchIgnoreInhibited=no
+    sudo service systemd-logind restart
+
 Reboot with the disk connected.
 
 Install motioneye
