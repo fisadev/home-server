@@ -38,9 +38,7 @@ Configure automatic mounting of tero:
 
     sudo mkdir -p /media/tero
     sudo chmod 544 /media/tero
-    echo "/dev/sdc1 /media/tero    ext4    defaults 0   0" | sudo tee -a /etc/fstab
-
-(the "sdc1" is the first (1) partition of the third (c) disk device. Check if that's still true in new machines)
+    echo "/dev/disk/by-uuid/5179a2f7-7dc9-4a86-a70f-2fcb84e60cfc /media/tero    ext4    defaults 0   0" | sudo tee -a /etc/fstab
 
 
 Create and activate the static files site:
