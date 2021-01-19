@@ -22,7 +22,7 @@ Update index and install packages:
 .. code-block::
 
     sudo apt update
-    sudo apt install rsync nocache git isync run-one nginx vim tmux glances
+    sudo apt install rsync nocache git isync run-one nginx vim tmux glances ecryptfs-utils
 
 
 Install crontab:
