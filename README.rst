@@ -12,7 +12,6 @@ Copy files needed on the server:
 
     scp /home/fisa/devel/mios/scripts/update_cyrene_fisadev_com cyrene.local:/home/sofisa/update_cyrene_fisadev_com
     scp /home/fisa/devel/mios/scripts/backup_fisadev_gmail cyrene.local:/home/sofisa/backup_fisadev_gmail
-    scp /home/fisa/devel/mios/dotfiles/mbsyncrc_fisadev_gmail cyrene.local:/home/sofisa/mbsyncrc_fisadev_gmail
     scp /home/fisa/devel/mios/sites_nginx/home_server_static cyrene.local:/home/sofisa/home_server_static
     scp /home/fisa/devel/home-server/crontab cyrene.local:/home/sofisa/crontab
 
